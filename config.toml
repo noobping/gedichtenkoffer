@@ -1,8 +1,8 @@
 # The URL the site will be built for
-base_url = "https://noobping.github.io/zola-template/"
-title = "example"
-description = "a example description"
-author = "noobping"
+base_url = "https://noobping.github.io/gedichtenkoffer/"
+title = "gedichtenkoffer"
+description = "Zoek je gedichten over 't leven, over liefde, geboorte, of rouw? Klik door, snuffel bij de teksten. Ik zie je gauw!"
+author = "Sonja Zuijdervelt"
 
 # Theme
 theme = "noobping"
@@ -29,6 +29,6 @@ highlight_code = false
 
 [extra]
 # Put all your custom variables here
-keywords = "key, words, for, your, site"
+keywords = "gedichtenkoffer, gedichten, leven, seizoenen, liefde, geboorte, rouw, kerst, sinterklaas"
 share = false
 webapp = false
