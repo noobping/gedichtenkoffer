@@ -1,34 +1,42 @@
-# The URL the site will be built for
-base_url = "https://noobping.github.io/gedichtenkoffer/"
+# Website configuratie
+base_url = "https://gedichtenkoffer.nl"
 title = "gedichtenkoffer"
-description = "Zoek je gedichten over 't leven, over liefde, geboorte, of rouw? Klik door, snuffel bij de teksten. Ik zie je gauw!"
+description = "Zoek je gedichten over 't leven, over liefde, geboorte, of rouw? Klik door, snuffel bij de teksten. Ik zie je gauw! "
 author = "Sonja Zuijdervelt"
 
-# Theme
+# Techniesche instellingen
 theme = "noobping"
-
-# Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
-
-# Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
-
-# Generate a sitemap. This iis used by the webapp option in the theme
+minify_html = true
 generate_sitemap = true
-
-# Generate a robots.txt file
+generate_feeds = true
 generate_robots_txt = true
 
-# Make files smaller by removing whitespace and comments
-minify_html = true
+# categorieën, tabladen en (hoofd)mappen (in content)
+taxonomies = [
+    { name = "categories", rss = true },
+    { name = "posts", rss = true }
+]
 
+# Techniesche instellingen
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = false
+lazy_async_image = true
 
 [extra]
-# Put all your custom variables here
+# thema configuratie
+webapp = true
+theme_color = "#1976D2"
 keywords = "gedichtenkoffer, gedichten, leven, seizoenen, liefde, geboorte, rouw, kerst, sinterklaas"
-share = false
-webapp = false
+footer = "Dit gedicht mag onder vermelding van de auteur, Sonja Zuijdervelt, gebruikt/verspreid worden"
+badge = "[![Gedichtenkoffer Up-to-date](https://github.com/gedichtenkoffer/gedichtenkoffer/actions/workflows/jekyll.yml/badge.svg)](https://github.com/gedichtenkoffer/gedichtenkoffer/actions/workflows/jekyll.yml)"
+share = true
+language = "nl"
+search = "zoek"
+categories = "categorieën"
+posts = "gedichten"
+not_found = "Pagina niet gevonden"
+not_found_subtitle = "De pagina die u zoekt bestaat niet."
+not_found_description = "De pagina die je zoekt bestaat niet of is verwijderd. Probeer het nog eens of ga terug naar de <a href=\"/\">startpagina</a>."
+search_noscript = "<strong>JavaScript is uitgeschakeld in uw browser.</strong> Schakel JavaScript in om de zoekfunctionaliteit te gebruiken."
