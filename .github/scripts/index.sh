@@ -7,7 +7,6 @@ find content/ -type d | while read -r dir; do
             echo "Creating $index_file"
             echo "---" > "$index_file"
             echo "---" >> "$index_file"
-            echo "" >> "$index_file"
         fi
     fi
 done
