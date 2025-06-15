@@ -57,6 +57,7 @@ jobs:
           sudo chown -R $USER:$USER public
           .github/scripts/pictures.sh
           .github/scripts/pictures.py
+          sed -i 's/lang="en"/lang="nl"/g' public/atom.xml
       - name: Upload static files as artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3
