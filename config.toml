@@ -1,0 +1,34 @@
+# The URL the site will be built for
+base_url = "https://noobping.github.io/zola-template/"
+title = "example"
+description = "a example description"
+author = "noobping"
+
+# Theme
+theme = "noobping"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+# Generate a sitemap. This iis used by the webapp option in the theme
+generate_sitemap = true
+
+# Generate a robots.txt file
+generate_robots_txt = true
+
+# Make files smaller by removing whitespace and comments
+minify_html = true
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = false
+
+[extra]
+# Put all your custom variables here
+keywords = "key, words, for, your, site"
+share = false
+webapp = false
