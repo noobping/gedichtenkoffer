@@ -13,7 +13,7 @@ find content/ -type f -name '*.md' ! -name '_index.md' | while read -r file; do
             echo "Adding creation date to $file"
             
             # Ask Git for the ISO‐8601 author date of the very first commit that added this file
-            creation_date=$(git log --diff-filter=A --follow --format=%aI -1 -- "$file" 2>/dev/null)
+            creation_date=$(git log --diff-filter=A --follow --format=%ad --date=format:'%Y-%m-%d' -1 -- "$file" 2>/dev/null)
             
             # Fallback to today if Git has no history for this (e.g. untracked file)
             if [ -z "$creation_date" ]; then
