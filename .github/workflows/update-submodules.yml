@@ -1,0 +1,17 @@
+name: Update Submodules
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: 'recursive'
+      - run: |
+          git submodule update --remote
+          git commit -am "Auto-update submodules to latest main"
+          git push
